@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задание 1");
-        int smartphone = 0;
-        switch (smartphone) {
+        int clientOS = 0;
+        switch (clientOS) {
             case 0:
                 System.out.println("Установите версию приложения для iOS по ссылке");
                 break;
@@ -10,13 +10,14 @@ public class Main {
                 System.out.println("Установите версию приложения для Android по ссылке");
         }
         System.out.println("Задание 2");
-        int clientDeviceYear = 2019;
+        int clientDeviceYear = 2011;
         if (clientDeviceYear <= 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             if (clientDeviceYear <= 2015)
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientDeviceYear > 2015) {
-            System.out.println("Установите обычную версию приложения для iOS по ссылке");
+        } else {
+            if (clientDeviceYear > 2015)
+                System.out.println("Установите обычную версию приложения для iOS по ссылке");
             if (clientDeviceYear > 2015)
                 System.out.println("Установите обычную версию приложения для Android по ссылке");
         }
@@ -28,10 +29,10 @@ public class Main {
             System.out.println("Год " + year + " не восокосный");
         }
         System.out.println("Задание 4");
-        int deliveryDistance = 1;
+        int deliveryDistance = 10;
         int days = 1;
         if (deliveryDistance < 20) {
-            System.out.println("Потребуется дней " + days);
+            System.out.println("Потребуется дней " + (days + 1));
         } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
             System.out.println("Потребуется дней + (days + 1");
         } else if (deliveryDistance >= 60 && deliveryDistance <= 100)
@@ -68,7 +69,7 @@ public class Main {
                 System.out.println("Август (Лето)");
                 break;
             case 9:
-                System.out.println("Сентябрь (Лето)");
+                System.out.println("Сентябрь (Осень)");
                 break;
             case 10:
                 System.out.println("Октябрь (Осень)");
@@ -78,7 +79,7 @@ public class Main {
                 break;
             case 12:
                 System.out.println("Декабрь (Зима)");
-            default:
+            default :
                 System.out.println("Такого дня не существует");
         }
     }
