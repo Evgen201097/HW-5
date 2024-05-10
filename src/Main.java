@@ -29,7 +29,7 @@ public class Main {
             System.out.println("Год " + year + " не восокосный");
         }
         System.out.println("Задание 4");
-        int deliveryDistance = 10;
+        int deliveryDistance = 30;
         int days = 1;
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней " + (days + 1));
@@ -43,42 +43,26 @@ public class Main {
         }
         System.out.println("Задание 5");
         int monthNumber = 12;
-        switch (monthNumber = 6) {
+        switch (monthNumber){
             case 1:
-                System.out.println("Январь (Зима)");
-                break;
             case 2:
-                System.out.println("Февраль (Зима)");
+            case 12:
+                System.out.println("Зима");
                 break;
             case 3:
-                System.out.println("Март (Весна)");
-                break;
             case 4:
-                System.out.println("Апрель (Весна)");
-                break;
             case 5:
-                System.out.println("Май (Весна)");
+                System.out.println("Весна");
                 break;
             case 6:
-                System.out.println("Июнь (Лето)");
-                break;
             case 7:
-                System.out.println("Июль (Лето)");
-                break;
             case 8:
-                System.out.println("Август (Лето)");
+                System.out.println("Лето");
                 break;
             case 9:
-                System.out.println("Сентябрь (Осень)");
-                break;
             case 10:
-                System.out.println("Октябрь (Осень)");
-                break;
             case 11:
-                System.out.println("Ноябрь (Осень)");
-                break;
-            case 12:
-                System.out.println("Декабрь (Зима)");
+                System.out.println("Осень");
             default :
                 System.out.println("Такого дня не существует");
         }
