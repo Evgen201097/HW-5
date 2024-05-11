@@ -10,16 +10,11 @@ public class Main {
                 System.out.println("Установите версию приложения для Android по ссылке");
         }
         System.out.println("Задание 2");
-        int clientDeviceYear = 2011;
+        int clientDeviceYear = 2015;
         if (clientDeviceYear <= 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             if (clientDeviceYear <= 2015)
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else {
-            if (clientDeviceYear > 2015)
-                System.out.println("Установите обычную версию приложения для iOS по ссылке");
-            if (clientDeviceYear > 2015)
-                System.out.println("Установите обычную версию приложения для Android по ссылке");
         }
         System.out.println("Задание 3");
         int year = 2025;
@@ -29,12 +24,12 @@ public class Main {
             System.out.println("Год " + year + " не восокосный");
         }
         System.out.println("Задание 4");
-        int deliveryDistance = 30;
+        int deliveryDistance = 10;
         int days = 1;
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней " + (days + 1));
         } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
-            System.out.println("Потребуется дней + (days + 1");
+            System.out.println("Потребуется дней" + (days + 1));
         } else if (deliveryDistance >= 60 && deliveryDistance <= 100)
         {
             System.out.println("Потребуется дней " + (days + 2));
