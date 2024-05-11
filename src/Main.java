@@ -10,7 +10,7 @@ public class Main {
                 System.out.println("Установите версию приложения для Android по ссылке");
         }
         System.out.println("Задание 2");
-        int clientDeviceYear = 2015;
+        int clientDeviceYear = 2016;
         if (clientDeviceYear <= 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             if (clientDeviceYear <= 2015)
@@ -27,12 +27,12 @@ public class Main {
         int deliveryDistance = 10;
         int days = 1;
         if (deliveryDistance < 20) {
-            System.out.println("Потребуется дней " + (days + 1));
+            System.out.println("Потребуется дней" + (days + 1));
         } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
             System.out.println("Потребуется дней" + (days + 1));
         } else if (deliveryDistance >= 60 && deliveryDistance <= 100)
         {
-            System.out.println("Потребуется дней " + (days + 2));
+            System.out.println("Потребуется дней" + (days + 2));
         } else {
             System.out.println("Доставки нет");
         }
@@ -58,6 +58,7 @@ public class Main {
             case 10:
             case 11:
                 System.out.println("Осень");
+                break;
             default :
                 System.out.println("Такого дня не существует");
         }
